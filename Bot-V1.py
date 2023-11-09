@@ -7,7 +7,7 @@ def generar_respuesta(pregunta):
   respuesta = openai.completions.create( ## creamos una instancia de Consulta de Competion
         model="text-davinci-003", # modelo a usar "gpt-3.5-turbo-instruct" "text-davinci-003"
         prompt=pregunta, # consulta o prompt
-        max_tokens=60 # cantidad maxima de tokens
+        max_tokens=160 # cantidad maxima de tokens
     )
   return respuesta.choices[0].text.strip()
 
