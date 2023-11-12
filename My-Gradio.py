@@ -3,7 +3,7 @@ from distutils.version import StrictVersion
 
 
 def saludo(nombre):
-    return "Hola " + nombre + ", ¿Como estas??? "
+    return "Te amo " + nombre + ", ¿Y vos??? "
 
 
 demo = gr.Interface(
@@ -12,5 +12,5 @@ demo = gr.Interface(
     outputs = "text"
 )
 
-demo.launch(share=True`)
+demo.launch(share=True)
 
