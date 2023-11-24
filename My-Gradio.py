@@ -38,7 +38,7 @@ demo = gr.Interface(
                 los limites de x cuando tiende a 0,
                 y cuando x tiende a oo" 
                 """),
-    outputs = "text"
+    outputs=gr.outputs.Markdown()
 )
 
 demo.launch(share=True)
